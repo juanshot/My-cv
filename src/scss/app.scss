@@ -1,6 +1,22 @@
+@import 'colors';
+@import 'card';
+@import 'keyframes';
+@import 'typography';
+@import 'personal_info';
 body,
 html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #545454;
+}
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $bg-dark;
 }

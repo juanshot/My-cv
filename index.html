@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script type="module" src="dist/bundle.js"></script>
-  <title>My CV</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/d4e90a7f79.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="dist/bundle.js"></script>
+    <title>My CV</title>
+  </head>
+  <body>
+    <!-- Component Templates -->
+    <!-- Main Card -->
+    <template id="main-card">
+      <div class="card main">
+        <div class="person__info">
+          <h2 class="person__name">Juan M. Garcia</h2>
+          <h4>Software Engineer</h4>
+          <div class="person__social_networks">
+            <a href="https://www.linkedin.com/">
+              <i class="fa fa-linkedin" style="color: white"></i>
+            </a>
+            <a href="https://www.linkedin.com/">
+              <i class="fab fa-github" style="color: white"></i>
+            </a>
+            <a href="https://www.linkedin.com/">
+              <i class="fab fa-gitlab" style="color: white"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </template>
+    <!-- Detail Card -->
+    <template id="detail-card">
+      <div class="card detail">
+        <div class="test">
+          <h2>About me</h2>
+        </div>
+      </div>
+    </template>
+    <div id="root"></div>
+  </body>
 </html>

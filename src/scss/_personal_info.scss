@@ -1,0 +1,21 @@
+.person__info {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  .person__name {
+    font-weight: 900;
+    line-height: 1.17;
+    color: #fff;
+    text-align: center;
+  }
+  .person__social_networks {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: $font_medium;
+    a {
+      margin-right: 10px;
+    }
+  }
+}

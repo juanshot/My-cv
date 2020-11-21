@@ -1,0 +1,28 @@
+.card {
+  background-color: $bg_card;
+  border-radius: 5px;
+  width: 20%;
+  &.main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-image: url(https://w5.foxdsgn.com/niko/black/wp-content/uploads/sites/4/2019/03/niko_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 80%;
+    box-shadow: 0 32px 84px 0 rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+  &.detail {
+    background-color: $bg_card;
+    min-height: 70%;
+    z-index: 0;
+    margin-left: -10px;
+    padding: 30px;
+    width: 40%;
+    -webkit-animation: linear alternate;
+    -webkit-animation-name: open;
+    -webkit-animation-duration: 0.5s;
+  }
+}

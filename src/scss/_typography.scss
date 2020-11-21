@@ -1,0 +1,14 @@
+$font_big: 48px;
+$font_medium: 18px;
+h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: $font_big;
+  color: #fff;
+}
+h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: $font_medium;
+  color: $primary;
+}
