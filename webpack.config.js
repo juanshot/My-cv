@@ -1,12 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  devtool: 'cheap-source-map',
   entry: path.join(__dirname, './src/app.ts'),
   output: {
     filename: './dist/bundle.js',
     path: __dirname,
-    devtoolModuleFilenameTemplate: '[absolute-resource-path]',
   },
   module: {
     rules: [
