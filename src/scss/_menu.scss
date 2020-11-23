@@ -1,0 +1,15 @@
+.menu-item {
+  cursor: pointer;
+  color: $font-default;
+  padding: 10px 0 10px 0;
+  &.active {
+    color: $primary;
+  }
+  &.download {
+    margin-top: auto;
+  }
+  &:hover {
+    font-weight: bold;
+    color: $primary;
+  }
+}

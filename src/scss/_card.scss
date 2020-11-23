@@ -17,7 +17,7 @@
   }
   &.detail {
     background-color: $bg_card;
-    min-height: 70%;
+    height: 70%;
     z-index: 0;
     margin-left: -10px;
     padding: 30px;
@@ -25,5 +25,18 @@
     -webkit-animation: linear alternate;
     -webkit-animation-name: open;
     -webkit-animation-duration: 0.5s;
+  }
+  &.menu {
+    display: flex;
+    flex-direction: column;
+    font-size: $font_menu_icons;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg_card;
+    height: 70%;
+    width: 74px;
+    z-index: 0;
+    margin-right: -10px;
+    padding: 10px;
   }
 }

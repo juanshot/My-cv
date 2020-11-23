@@ -1,10 +1,24 @@
 import Component from './BaseComponent';
-export default (currentTemplateId: string) => {
-  const renderDetailInfo = () => {
-    console.log('render....', currentTemplateId);
-  };
+import MenuStore from '../store/Menu';
+import { MenuItem } from '../store/Menu';
 
-  const DetailCard = Component('detail-card', 'root', true, 'detail__card');
+export default (currentTemplateName: string) => {
+  const renderDetailInfo = () => {
+    console.log(currentTemplateName);
+  };
+  const menu = MenuStore();
+  const menuItem: MenuItem = menu
+    .getMenuItems()
+    .find((item) => item.name === currentTemplateName) as MenuItem;
+
+  console.log({ menuItem });
+
+  const DetailCard = Component(
+    menuItem.templateId,
+    'root',
+    true,
+    'detail__card'
+  );
   renderDetailInfo();
   DetailCard.attach();
 };
