@@ -6,17 +6,18 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    background-image: url(https://w5.foxdsgn.com/niko/black/wp-content/uploads/sites/4/2019/03/niko_img.jpg);
+    background-image: url(https://cv-jmg.s3.us-east-2.amazonaws.com/juan.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 80%;
+    min-height: 90%;
     width: 30%;
-    box-shadow: 0 32px 84px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
     z-index: 2;
   }
   &.detail {
     background-color: $bg_card;
+    font-size: 22px;
     height: 70%;
     z-index: 0;
     margin-left: -10px;

@@ -1,10 +1,12 @@
 import routes from '../routes';
 
 export interface MenuItem {
+  active: boolean;
+  action?: () => void;
+  iconClasses: Array<string>;
   name: string;
   templateId: string;
-  iconClasses: Array<string>;
-  active: boolean;
+  type?: string;
 }
 
 export default () => {

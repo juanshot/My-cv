@@ -17,9 +17,12 @@ export default (
       iconElement.setAttribute('name', menu.name);
       menu.iconClasses.forEach((className) => {
         iconElement.classList.add(className);
+        iconElement.addEventListener(
+          'click',
+          menu.action ? menu.action : handleMenuClick
+        );
       });
       menuElement.appendChild(iconElement);
-      menuElement.addEventListener('click', handleMenuClick);
       parentItem.appendChild(menuElement);
     });
   };

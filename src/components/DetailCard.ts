@@ -3,15 +3,10 @@ import MenuStore from '../store/Menu';
 import { MenuItem } from '../store/Menu';
 
 export default (currentTemplateName: string) => {
-  const renderDetailInfo = () => {
-    console.log(currentTemplateName);
-  };
   const menu = MenuStore();
   const menuItem: MenuItem = menu
     .getMenuItems()
     .find((item) => item.name === currentTemplateName) as MenuItem;
-
-  console.log({ menuItem });
 
   const DetailCard = Component(
     menuItem.templateId,
@@ -19,6 +14,5 @@ export default (currentTemplateName: string) => {
     true,
     'detail__card'
   );
-  renderDetailInfo();
   DetailCard.attach();
 };

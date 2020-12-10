@@ -18,9 +18,7 @@ export default <T extends HTMLElement, U extends HTMLElement>(
   const templateElement: HTMLTemplateElement = document.getElementById(
     templateId
   ) as HTMLTemplateElement;
-  console.log(templateElement);
   const parentElement: T = document.getElementById(parentId) as T;
-  console.log({ parentElement });
   const importedContent: DocumentFragment = document.importNode(
     templateElement.content,
     true
