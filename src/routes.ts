@@ -22,7 +22,7 @@ export default [
   {
     name: 'download',
     type: 'link',
-    action: async () => {
+    action: () => {
       fetch('https://cv-jmg.s3.us-east-2.amazonaws.com/JuanMiguelGarciaFE.PDF')
         .then((response) => response.blob())
         .then((blob) => {

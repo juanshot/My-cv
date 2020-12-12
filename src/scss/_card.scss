@@ -5,6 +5,7 @@
   &.main {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-end;
     background-image: url(https://cv-jmg.s3.us-east-2.amazonaws.com/juan.jpg);
     background-size: cover;
@@ -26,6 +27,16 @@
     -webkit-animation: linear alternate;
     -webkit-animation-name: open;
     -webkit-animation-duration: 0.5s;
+    a {
+      color: $primary;
+      text-decoration: underline;
+    }
+    hr {
+      border-color: $font-default;
+    }
+    .item {
+      margin-top: 10px;
+    }
   }
   &.menu {
     display: flex;
